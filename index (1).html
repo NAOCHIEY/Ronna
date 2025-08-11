@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body {  font-family: Times New Roman, Tahoma ;
+                    background-color; #FFD1DC;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+            }
+            
+            .login-container {
+                    background-color: pink;
+                    padding: 30px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    width: 300px;
+                    text-align: center;
+            }
+            
+            h1 {
+                    color: #333;
+                    margin-bottom: 20px;
+            }
+            
+            input {
+                    width: 100%;
+                    padding: 10px;
+                    margin: 10px 0;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+            }
+            
+            button {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #563d2d;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+            }
+            
+            button:hover {
+                    background-color: #45a049;
+            }
+            
+            .error
+                color: brown
+                font-size: 12px;
+            }
+        </style
+    </head>
+    <body>
+        <div class="login-container">
+            <h1>login</h1>
+            <form id="naocheese">
+        <input type+"text" id="username" placeholder="masukkkan username" />
+        <input type="password" placeholder="masukkan password"  /> 
+        <button type="submit" >Login</button><br />    
+        <div id="error-massage" class="error" ></div>
+        <p>belum punya akun ? <a class="" href="#">daftar akun</a></p>
+            </form>
+        </div>
+        <script>
+            document.getElementById("naocheese").addEventListener('submit',function(event) {
+            event.preventDefault();
+            
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var errormassage = document.getElementById('error-massage');
+            
+            if (username === '' || password === '' ){
+                errormassage.textcontent = 'wajib diisi!';
+            }
+            } );
+            
+        </script>
+    </body>
+</html>
